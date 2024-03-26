@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Title</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="container">
+
+<form id="form">
+
+  <h1>Register</h1>
+  <div class="form_field">
+    <label for="username">Username</label>
+    <input type="text" id="username" name="username">
+    <div class="error"></div>
+  </div>
+  <div class="form_field">
+    <label for="email">Email</label>
+    <input type="email" id="email" name="username">
+    <div class="error"></div>
+  </div>
+  <div class="form_field">
+    <label for="subjectField">Subject Field</label>
+    <textarea 
+      id="subject-field" 
+      name="subject-field" 
+      rows="4" 
+      cols="50"
+      placeholder="subject text">
+  </textarea>
+    <div class="error"></div>
+  </div>
+
+  <div class="form_field">
+    <label for="messageField">Message Field</label>
+    <textarea 
+      id="message-field" 
+      name="message-field" 
+      rows="4" 
+      cols="50" 
+      placeholder="message text">
+    </textarea>
+    <div class="error"></div>
+  </div>
+  <button id="submit" class="submit">Register</button>
+  <div class="success-animation">
+    <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52"><circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none" /><path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8" /></svg>
+  </div>
+</form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
